@@ -1,0 +1,9 @@
+services:
+  openai:
+    build:
+      context: openai
+    secrets:
+      - openai_key
+secrets:
+  openai_key:
+    file: ./secrets
